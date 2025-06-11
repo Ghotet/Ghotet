@@ -1,8 +1,9 @@
 # Ghotet
 
-I build tools for people who’d rather control their systems than trust them.
+I build tools for people who like to take control of their systems, not just rely on them.
 
-I’m currently focused on automation, Windows debloat scripting, local LLMs, and building a self-repairing AI assistant stack. Everything I make is designed to be modular, offline-first, and under your control—no cloud lock-in, no marketing fluff.
+Right now, I’m diving into automation, Windows debloating, local LLMs, and creating a self-repairing AI assistant stack. Everything I make is modular, 
+offline-first, and fully in your hands — no cloud lock-ins or unnecessary fluff.
 
 ## Focus Areas
 
@@ -19,8 +20,8 @@ I’m currently focused on automation, Windows debloat scripting, local LLMs, an
 
 ## Philosophy
 
-I don’t memorize commands—I design logic flows. I work with AI the way others use a keyboard: as an extension of intent. I believe automation should be accessible, reversible, and answerable. If it breaks, it should fix itself. If it doesn’t belong, it shouldn’t be there.
+I prefer to build open tools and software that anyone can use, without worrying about money, ads, or any of that extra fluff. Your devices and the tools within them should be accessible, flexible, and in your control. Simple to use for the average user, but you have the freedom to dive in and change every little detail or repurpose it for your own use case, if you want.
 
 ## Contact
 
-Not really the point—but if you're working on something aligned and want to talk tools, systems, or automation, reach out through GitHub.
+If you want to talk tools, systems, or automation, reach out through GitHub or Dev.to
