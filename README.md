@@ -1,8 +1,8 @@
 # Ghotet
 
-I build tools for people who like to take control of their systems, not just rely on them.
+I build various software and tools for Windows and Linux.
 
-Right now, I’m diving into automation, Windows debloating, local LLMs, and creating a self-repairing AI assistant stack. Everything I make is modular, 
+I’m diving into automation, Windows debloating, local LLM customization, and creating a self-repairing AI assistant stack. Everything I make is modular, 
 offline-first, and fully in your hands — no cloud lock-ins or unnecessary fluff.
 
 ## Focus Areas
