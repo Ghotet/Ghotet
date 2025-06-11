@@ -20,7 +20,7 @@ offline-first, and fully in your hands — no cloud lock-ins or unnecessary fluf
 
 ## Philosophy
 
-I prefer to build open tools and software that anyone can use, without worrying about money, ads, or any of that extra fluff. Your devices and the tools within them should be accessible, flexible, and in your control. Simple to use for the average user, but you have the freedom to dive in and change every little detail or repurpose it for your own use case, if you want.
+I prefer to build open tools and software that anyone can use, without worrying about money, ads, or any of that kind of nonsense. Your devices and the tools within them should be accessible, flexible, and in your control. Simple to use for the average user, but you have the freedom to dive in and change every little detail or repurpose it for your own use case, if you want.
 
 ## Contact
 
