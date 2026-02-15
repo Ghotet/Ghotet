@@ -1,27 +1,20 @@
 # Ghotet
 
-I build various software and tools for Windows and Linux.
+I’m a computer science student with a background in game design, mostly tinkering with backend development and software tools. I like building things that are modular, practical, and easy to customize.
 
-I’m diving into automation, Windows debloating, local LLM customization, and creating a self-repairing AI assistant stack. Everything I make is modular, 
-offline-first, and fully in your hands — no cloud lock-ins or unnecessary fluff.
+I’m learning new languages, experimenting with local LLMs, and exploring ways to connect them to apps in a hands-on way. I also maintain a self-hosted website for web development practice.
 
 ## Focus Areas
 
-- Local LLM deployment and system integration (GPU/CPU fallback logic, prompt routing, etc)
-- Portable script-based automation for Windows/Linux
-- Modular AI assistants with personality files and command routing layers
-- Custom toolchains for debloating, optimizing, and recovering Windows installations
-- Building toward autonomous system recovery logic and zero-dependency interfaces
-
-## Notable Repos
-
-- [`ghost-debloat`](https://github.com/Ghotet/ghost-debloat): Clean, scriptable Windows 11 optimization tool for developers and tinkerers
-- [`windows-gamer-debloat`](https://github.com/Ghotet/windows-gamer-debloat): A gamer-first variant with Xbox-safe and full-strip modes
+- Backend development with Python and C# (and picking up new languages along the way)  
+- Local LLM experimentation and integration with custom tools  
+- Modular, flexible software that can be adapted or extended  
 
 ## Philosophy
 
-I prefer to build open tools and software that anyone can use, without worrying about money, ads, or any of that kind of nonsense. Your devices and the tools within them should be accessible, flexible, and in your control. Simple to use for the average user, but you have the freedom to dive in and change every little detail or repurpose it for your own use case, if you want.
+I like building software that’s practical, open, and easy to modify. Your tools should work for you, not the other way around. I prioritize modular design and flexibility, so projects can grow or be repurposed without forcing complexity.
 
 ## Contact
 
-If you want to talk tools, systems, or automation, reach out through GitHub or Dev.to
+Feel free to reach out via GitHub or Dev.to if you want to talk code, tools, or tinkering projects.
+
