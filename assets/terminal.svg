@@ -65,25 +65,25 @@
           fill="url(#cloth)" stroke="#19ef63" stroke-width="2.2"/>
     <path d="M399 187 L450 215 L501 187" fill="none" stroke="#063d20" stroke-width="4" opacity="0.72"/>
 
-    <!-- hood silhouette follows the sharper A-shape of the profile picture -->
+    <!-- hood silhouette: same pointed top, with a slightly wider cheek/jaw flare -->
     <path d="M450 27
              C429 37 412 52 401 73
-             C389 95 389 116 400 135
-             C408 149 421 160 434 169
-             L450 181
-             L466 169
-             C479 160 492 149 500 135
-             C511 116 511 95 499 73
+             C389 95 384 116 396 136
+             C405 151 420 163 434 172
+             L450 184
+             L466 172
+             C480 163 495 151 504 136
+             C516 116 511 95 499 73
              C488 52 471 37 450 27 Z"
           fill="url(#hood)" stroke="#48ff7d" stroke-width="2.5"/>
 
-    <!-- dark hood opening begins around forehead level; no mask-outline rings -->
+    <!-- dark hood opening begins around forehead level and drops a little lower at the chin -->
     <path d="M450 54
              C432 59 418 70 409 87
-             C400 104 402 121 414 136
-             C423 147 435 157 450 166
-             C465 157 477 147 486 136
-             C498 121 500 104 491 87
+             C400 104 401 122 413 138
+             C422 150 434 162 450 174
+             C466 162 478 150 487 138
+             C499 122 500 104 491 87
              C482 70 468 59 450 54 Z"
           fill="#020504"/>
 
@@ -101,8 +101,8 @@
     <path d="M444 145 Q450 149 456 145" fill="none" stroke="#087238" stroke-width="1.8" stroke-linecap="round"/>
 
     <!-- hoodie center seam / drawstrings, borrowed from the profile-pic silhouette -->
-    <path d="M450 181 V207" stroke="#083e20" stroke-width="2" opacity="0.8"/>
-    <path d="M437 183 L440 207 M463 183 L460 207" stroke="#21ef68" stroke-width="1.5" opacity="0.75"/>
+    <path d="M450 184 V207" stroke="#083e20" stroke-width="2" opacity="0.8"/>
+    <path d="M437 186 L440 207 M463 186 L460 207" stroke="#21ef68" stroke-width="1.5" opacity="0.75"/>
     <circle cx="440" cy="209" r="2.3" fill="#16e85e"/>
     <circle cx="460" cy="209" r="2.3" fill="#16e85e"/>
 
