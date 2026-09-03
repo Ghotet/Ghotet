@@ -1,111 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="290" viewBox="0 0 900 290" role="img" aria-labelledby="title desc">
-  <title id="title">Ghotet animated hooded mascot</title>
-  <desc id="desc">A neon-green hooded figure with a dark alien mask quietly types on a laptop between terminal screens.</desc>
+  <title id="title">Ghotet animated mascot</title>
+  <desc id="desc">A neon-green hooded hacker avatar with a dark alien mask types at a keyboard between two terminal screens.</desc>
 
   <defs>
-    <radialGradient id="bgGlow" cx="50%" cy="48%" r="55%">
-      <stop offset="0" stop-color="#0b2a18" stop-opacity="0.55"/>
-      <stop offset="0.55" stop-color="#09150f" stop-opacity="0.26"/>
-      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="hoodGreen" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#18ff68"/>
-      <stop offset="0.45" stop-color="#00e84f"/>
-      <stop offset="1" stop-color="#009b38"/>
+    <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39ff79"/>
+      <stop offset="0.5" stop-color="#08e95b"/>
+      <stop offset="1" stop-color="#07973f"/>
     </linearGradient>
-    <linearGradient id="hoodShadow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#06c847"/>
-      <stop offset="1" stop-color="#005c28"/>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12d856"/>
+      <stop offset="1" stop-color="#056d32"/>
     </linearGradient>
-    <linearGradient id="laptop" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#101820"/>
-      <stop offset="1" stop-color="#05090c"/>
-    </linearGradient>
-    <filter id="greenGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="2.6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
   <rect x="5" y="5" width="890" height="280" rx="18" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
-  <ellipse cx="450" cy="145" rx="335" ry="132" fill="url(#bgGlow)"/>
 
-  <g opacity="0.42" stroke="#00c948" fill="none" stroke-width="1.3">
-    <rect x="112" y="55" width="188" height="116" rx="8"/>
-    <rect x="600" y="55" width="188" height="116" rx="8"/>
-    <path d="M128 74 H192 M128 88 H242 M128 102 H219 M128 116 H274 M128 130 H206 M128 144 H256"/>
-    <path d="M616 74 H692 M616 88 H758 M616 102 H714 M616 116 H770 M616 130 H734 M616 144 H682"/>
+  <!-- background terminals -->
+  <g fill="#07140d" stroke="#00b84a" stroke-width="1.4" opacity="0.55">
+    <rect x="92" y="54" width="205" height="108" rx="7"/>
+    <rect x="603" y="54" width="205" height="108" rx="7"/>
   </g>
-  <g opacity="0.72" fill="#00f04a">
-    <circle cx="128" cy="74" r="2.2"/><circle cx="616" cy="74" r="2.2"/>
-    <rect x="247" y="99" width="18" height="2"/><rect x="716" y="129" width="26" height="2"/>
+  <g stroke="#00d957" stroke-width="2" opacity="0.38" stroke-linecap="round">
+    <path d="M110 75 H174 M110 90 H233 M110 105 H199 M110 120 H259 M110 135 H220"/>
+    <path d="M621 75 H702 M621 90 H775 M621 105 H731 M621 120 H786 M621 135 H686"/>
+  </g>
+  <g fill="#18ff68">
+    <rect x="238" y="103" width="19" height="2" opacity="0.2"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.8s" repeatCount="indefinite"/></rect>
+    <rect x="748" y="118" width="25" height="2" opacity="0.65"><animate attributeName="opacity" values="0.65;0.15;0.65" dur="3.1s" repeatCount="indefinite"/></rect>
   </g>
 
+  <!-- avatar -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -1.5;0 0;0 0" keyTimes="0;0.22;0.44;1" dur="4.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -1;0 0;0 0" keyTimes="0;0.2;0.4;1" dur="5.5s" repeatCount="indefinite"/>
 
-    <path d="M350 203 C365 178 392 164 421 159 L479 159 C509 164 536 179 550 203 L566 261 H334 Z"
-          fill="url(#hoodShadow)" stroke="#00f04a" stroke-width="2.2"/>
-    <path d="M377 192 C395 176 420 169 450 169 C480 169 505 176 523 192 L530 238 H370 Z"
-          fill="url(#hoodGreen)" opacity="0.88"/>
-    <path d="M415 166 L450 191 L485 166" fill="none" stroke="#062f18" stroke-width="4" opacity="0.7"/>
+    <!-- shoulders / torso -->
+    <path d="M361 194 C384 178 407 172 430 170 H470 C493 172 516 178 539 194 L563 246 H337 Z"
+          fill="url(#cloth)" stroke="#00ef5c" stroke-width="2.4"/>
+    <path d="M390 190 L450 224 L510 190" fill="none" stroke="#063e20" stroke-width="4" opacity="0.85"/>
+    <path d="M443 219 L450 229 L457 219" fill="none" stroke="#24ff70" stroke-width="2"/>
 
-    <path d="M450 25 C385 25 343 65 339 122 C336 164 355 193 385 208 C376 182 371 155 373 126 C376 78 407 49 450 48 C493 49 524 78 527 126 C529 155 524 182 515 208 C545 193 564 164 561 122 C557 65 515 25 450 25 Z"
-          fill="url(#hoodGreen)" stroke="#17ff69" stroke-width="2.6"/>
+    <!-- hood: pointed and open, closer to profile avatar -->
+    <path d="M450 28 C409 39 377 66 360 103 C344 138 350 174 374 198 L396 183 C381 164 376 139 384 115 C394 84 417 64 450 55 C483 64 506 84 516 115 C524 139 519 164 504 183 L526 198 C550 174 556 138 540 103 C523 66 491 39 450 28 Z"
+          fill="url(#hood)" stroke="#2fff78" stroke-width="2.8"/>
+    <!-- hood inner shadow, no extra rings -->
+    <path d="M450 55 C416 64 394 85 384 115 C374 145 384 174 405 192 C420 203 435 209 450 214 C465 209 480 203 495 192 C516 174 526 145 516 115 C506 85 484 64 450 55 Z"
+          fill="#07100c" stroke="#00c94f" stroke-width="2.2"/>
 
-    <path d="M450 48 C403 48 373 82 373 127 C373 169 397 194 450 211 C503 194 527 169 527 127 C527 82 497 48 450 48 Z"
-          fill="#05090b" stroke="#069f3c" stroke-width="3"/>
-    <path d="M450 55 C409 55 383 85 383 127 C383 161 402 184 450 201 C498 184 517 161 517 127 C517 85 491 55 450 55"
-          fill="none" stroke="#00e84f" stroke-width="2" opacity="0.7"/>
+    <!-- mask -->
+    <path d="M450 76 C419 76 399 94 399 121 C399 151 417 173 450 188 C483 173 501 151 501 121 C501 94 481 76 450 76 Z"
+          fill="#020504" stroke="#18ff68" stroke-width="2.3"/>
+    <path d="M450 84 L444 95 L450 100 L456 95 Z" fill="#18ff68" opacity="0.9" filter="url(#glow)"/>
 
-    <path d="M450 74 C414 74 393 93 393 121 C393 151 412 174 450 191 C488 174 507 151 507 121 C507 93 486 74 450 74 Z"
-          fill="#020506" stroke="#19f569" stroke-width="2"/>
-
-    <path d="M450 84 L443 96 L450 101 L457 96 Z" fill="#00f04a" opacity="0.82" filter="url(#greenGlow)"/>
-
-    <g id="openEyes" fill="#19ff67" filter="url(#greenGlow)">
-      <path d="M408 112 C419 101 433 99 444 104 C441 122 432 134 416 137 C410 129 407 121 408 112 Z"/>
-      <path d="M492 112 C481 101 467 99 456 104 C459 122 468 134 484 137 C490 129 493 121 492 112 Z"/>
-      <animate attributeName="opacity" values="1;1;0;1;1;1;0;1" keyTimes="0;0.44;0.455;0.475;0.79;0.805;0.825;1" dur="6.6s" repeatCount="indefinite"/>
+    <!-- eyes -->
+    <g fill="#25ff73" filter="url(#glow)">
+      <path d="M414 111 C423 103 435 102 444 106 C441 121 433 132 420 135 C415 128 413 119 414 111 Z"/>
+      <path d="M486 111 C477 103 465 102 456 106 C459 121 467 132 480 135 C485 128 487 119 486 111 Z"/>
+      <animate attributeName="opacity" values="1;1;0;1;1;1;0;1" keyTimes="0;0.45;0.465;0.49;0.81;0.825;0.845;1" dur="7.2s" repeatCount="indefinite"/>
     </g>
-
-    <g opacity="0" stroke="#19ff67" stroke-width="4" stroke-linecap="round" filter="url(#greenGlow)">
-      <path d="M410 120 Q426 127 441 120"/>
-      <path d="M490 120 Q474 127 459 120"/>
-      <animate attributeName="opacity" values="0;0;1;0;0;0;1;0" keyTimes="0;0.44;0.455;0.475;0.79;0.805;0.825;1" dur="6.6s" repeatCount="indefinite"/>
+    <g opacity="0" stroke="#25ff73" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)">
+      <path d="M415 121 Q429 127 442 121"/>
+      <path d="M485 121 Q471 127 458 121"/>
+      <animate attributeName="opacity" values="0;0;1;0;0;0;1;0" keyTimes="0;0.45;0.465;0.49;0.81;0.825;0.845;1" dur="7.2s" repeatCount="indefinite"/>
     </g>
+    <path d="M443 154 Q450 158 457 154" fill="none" stroke="#08763a" stroke-width="2" stroke-linecap="round"/>
 
-    <path d="M441 155 Q450 160 459 155" fill="none" stroke="#008f35" stroke-width="2" stroke-linecap="round"/>
+    <!-- arms -->
+    <path d="M395 198 C410 204 421 214 426 229" fill="none" stroke="#0ba849" stroke-width="18" stroke-linecap="round"/>
+    <path d="M505 198 C490 204 479 214 474 229" fill="none" stroke="#0ba849" stroke-width="18" stroke-linecap="round"/>
 
-    <path d="M382 197 C398 205 409 219 414 241" fill="none" stroke="#00b941" stroke-width="17" stroke-linecap="round"/>
-    <path d="M518 197 C502 205 491 219 486 241" fill="none" stroke="#00b941" stroke-width="17" stroke-linecap="round"/>
+    <!-- desk -->
+    <path d="M309 246 H591" stroke="#52605a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M330 251 H570" stroke="#202923" stroke-width="8" stroke-linecap="round"/>
 
-    <path d="M359 198 H541 L526 257 H374 Z" fill="url(#laptop)" stroke="#00e84f" stroke-width="2.6"/>
-    <path d="M374 257 H526 L545 266 H355 Z" fill="#11191b" stroke="#00a63b" stroke-width="2"/>
-    <path d="M450 216 C437 216 429 224 429 234 C429 244 437 251 450 257 C463 251 471 244 471 234 C471 224 463 216 450 216 Z"
-          fill="#020606" stroke="#00f04a" stroke-width="1.8"/>
-    <path d="M437 231 C441 226 446 225 449 227 C448 234 444 238 439 239 Z M463 231 C459 226 454 225 451 227 C452 234 456 238 461 239 Z"
-          fill="#18ff68" filter="url(#greenGlow)"/>
+    <!-- keyboard -->
+    <path d="M382 224 H518 L536 245 H364 Z" fill="#111713" stroke="#00c94f" stroke-width="2"/>
+    <g stroke="#0b7136" stroke-width="1" opacity="0.85">
+      <path d="M386 231 H514 M381 237 H519"/>
+      <path d="M397 227 L392 242 M414 227 L411 242 M431 227 L429 242 M450 227 V242 M469 227 L471 242 M486 227 L489 242 M503 227 L508 242"/>
+    </g>
+    <rect x="437" y="238" width="27" height="3" rx="1.5" fill="#18ff68" opacity="0.55"/>
 
-    <g fill="none" stroke="#0af05a" stroke-width="6" stroke-linecap="round">
-      <path d="M405 246 Q417 236 431 247">
-        <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0;0 0" keyTimes="0;0.25;0.5;1" dur="0.62s" repeatCount="indefinite"/>
+    <!-- typing hands, deliberately above keyboard -->
+    <g fill="#0dc454" stroke="#2fff78" stroke-width="1.3">
+      <path d="M405 215 C415 210 426 211 433 219 L429 228 C419 225 411 225 402 229 Z">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0;0 0" keyTimes="0;0.22;0.48;1" dur="0.66s" repeatCount="indefinite"/>
       </path>
-      <path d="M469 247 Q483 236 495 246">
-        <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 3;0 0" keyTimes="0;0.35;0.65;1" dur="0.62s" repeatCount="indefinite"/>
+      <path d="M495 215 C485 210 474 211 467 219 L471 228 C481 225 489 225 498 229 Z">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 3;0 0" keyTimes="0;0.36;0.64;1" dur="0.66s" repeatCount="indefinite"/>
       </path>
     </g>
-  </g>
 
-  <g fill="#18ff68" opacity="0.65">
-    <rect x="153" y="150" width="7" height="3">
-      <animate attributeName="opacity" values="0.15;0.8;0.25;0.15" dur="3.2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="735" y="103" width="11" height="3">
-      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.7s" repeatCount="indefinite"/>
-    </rect>
+    <!-- tiny key flashes -->
+    <g fill="#29ff76" opacity="0.75">
+      <rect x="414" y="235" width="5" height="2"><animate attributeName="opacity" values="0;1;0;0" dur="0.66s" repeatCount="indefinite"/></rect>
+      <rect x="482" y="232" width="5" height="2"><animate attributeName="opacity" values="0;0;1;0" dur="0.66s" repeatCount="indefinite"/></rect>
+    </g>
   </g>
 </svg>
