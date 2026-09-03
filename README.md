@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/terminal.svg" width="100%" alt="Animated hooded Ghotet mascot typing at a laptop" />
+  <img src="./assets/terminal.svg" width="100%" alt="Animated green-hooded Ghotet mascot typing at a laptop" />
 </p>
 
 # `> whoami`
@@ -15,9 +15,7 @@ I care less about isolated chunks of code and more about:
 
 `systems → state → behavior → interaction → emergent chaos`
 
-These days I mostly design the architecture, bully prototypes until they work, and delegate the actual typing to a small army of AI tools.
-
-> **Methodology:** I don't code, I delegate.
+These days I spend more time designing architecture, breaking prototypes, and coordinating a bunch of AI tools to handle implementation than staring at individual functions all day.
 
 ---
 
@@ -98,7 +96,7 @@ This has historically been a terrible way to reduce the number of projects I hav
 location       Ontario, Canada
 studying       Computer Science
 building       Daemonic
-methodology    I don't code, I delegate
+working style  design → delegate → test → iterate
 preferred OS   whichever one annoyed me least today
 local AI       yes
 scope control  no
@@ -113,7 +111,7 @@ uptime         questionable
 1. have idea
 2. explain idea to AI
 3. accidentally design an entire subsystem
-4. delegate implementation
+4. hand implementation to whichever AI looks least likely to set the repo on fire
 5. test it
 6. discover something cursed
 7. fix cursed thing
