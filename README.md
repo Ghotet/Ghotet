@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/terminal.svg" width="100%" alt="Ghotet terminal profile" />
+  <img src="./assets/terminal.svg" width="100%" alt="Animated hooded Ghotet mascot typing at a laptop" />
 </p>
 
 # `> whoami`
