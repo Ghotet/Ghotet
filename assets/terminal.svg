@@ -1,104 +1,125 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="290" viewBox="0 0 900 290" role="img" aria-labelledby="title desc">
-  <title id="title">Ghotet animated mascot</title>
-  <desc id="desc">A neon-green hooded hacker avatar with a dark alien mask types at a keyboard between two terminal screens.</desc>
+  <title id="title">Ghotet animated hooded mascot</title>
+  <desc id="desc">A green hooded hacker avatar inspired by the Ghotet profile picture types at a keyboard while terminal panels scroll behind him.</desc>
 
   <defs>
-    <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#39ff79"/>
-      <stop offset="0.5" stop-color="#08e95b"/>
-      <stop offset="1" stop-color="#07973f"/>
+    <linearGradient id="hood" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#52ff7d"/>
+      <stop offset="0.42" stop-color="#14eb5b"/>
+      <stop offset="1" stop-color="#078c3c"/>
     </linearGradient>
     <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#12d856"/>
-      <stop offset="1" stop-color="#056d32"/>
+      <stop offset="0" stop-color="#14d957"/>
+      <stop offset="1" stop-color="#07642f"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <clipPath id="leftScreen"><rect x="105" y="65" width="180" height="88" rx="4"/></clipPath>
+    <clipPath id="rightScreen"><rect x="615" y="65" width="180" height="88" rx="4"/></clipPath>
   </defs>
 
   <rect x="5" y="5" width="890" height="280" rx="18" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
 
-  <!-- background terminals -->
-  <g fill="#07140d" stroke="#00b84a" stroke-width="1.4" opacity="0.55">
-    <rect x="92" y="54" width="205" height="108" rx="7"/>
-    <rect x="603" y="54" width="205" height="108" rx="7"/>
+  <!-- quiet terminal panels -->
+  <g fill="#07110b" stroke="#00ad47" stroke-width="1.3" opacity="0.58">
+    <rect x="92" y="52" width="205" height="112" rx="7"/>
+    <rect x="603" y="52" width="205" height="112" rx="7"/>
   </g>
-  <g stroke="#00d957" stroke-width="2" opacity="0.38" stroke-linecap="round">
-    <path d="M110 75 H174 M110 90 H233 M110 105 H199 M110 120 H259 M110 135 H220"/>
-    <path d="M621 75 H702 M621 90 H775 M621 105 H731 M621 120 H786 M621 135 H686"/>
+
+  <g clip-path="url(#leftScreen)" font-family="Consolas, Monaco, monospace" font-size="8.5" fill="#15d95a" opacity="0.72">
+    <g>
+      <text x="110" y="74">POST /runtime/infer  . . . 202</text>
+      <text x="110" y="88">worker.stream :: chunk_31</text>
+      <text x="110" y="102">ctx.compile  tokens=6842</text>
+      <text x="110" y="116">provider=native  ready</text>
+      <text x="110" y="130">memory.page :: selected</text>
+      <text x="110" y="144">event.delta  +++++++++++++++++</text>
+      <text x="110" y="158">POST /runtime/infer  . . . 202</text>
+      <text x="110" y="172">worker.stream :: chunk_32</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -28" dur="3.8s" repeatCount="indefinite"/>
+    </g>
   </g>
-  <g fill="#18ff68">
-    <rect x="238" y="103" width="19" height="2" opacity="0.2"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.8s" repeatCount="indefinite"/></rect>
-    <rect x="748" y="118" width="25" height="2" opacity="0.65"><animate attributeName="opacity" values="0.65;0.15;0.65" dur="3.1s" repeatCount="indefinite"/></rect>
+
+  <g clip-path="url(#rightScreen)" font-family="Consolas, Monaco, monospace" font-size="8.5" fill="#15d95a" opacity="0.72">
+    <g>
+      <text x="620" y="74">GET /health  . . . 200 OK</text>
+      <text x="620" y="88">agent.daemia :: awake</text>
+      <text x="620" y="102">gpu0  vram=active</text>
+      <text x="620" y="116">semantic.snapshot :: sealed</text>
+      <text x="620" y="130">stream.delta :: 00000110</text>
+      <text x="620" y="144">queue.next  ................</text>
+      <text x="620" y="158">GET /health  . . . 200 OK</text>
+      <text x="620" y="172">agent.daemia :: awake</text>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -28" dur="4.4s" repeatCount="indefinite"/>
+    </g>
   </g>
 
   <!-- avatar -->
   <g>
-    <animateTransform attributeName="transform" type="translate" values="0 0;0 -1;0 0;0 0" keyTimes="0;0.2;0.4;1" dur="5.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -1;0 0;0 0" keyTimes="0;0.20;0.40;1" dur="5.6s" repeatCount="indefinite"/>
 
-    <!-- shoulders / torso -->
-    <path d="M361 194 C384 178 407 172 430 170 H470 C493 172 516 178 539 194 L563 246 H337 Z"
-          fill="url(#cloth)" stroke="#00ef5c" stroke-width="2.4"/>
-    <path d="M390 190 L450 224 L510 190" fill="none" stroke="#063e20" stroke-width="4" opacity="0.85"/>
-    <path d="M443 219 L450 229 L457 219" fill="none" stroke="#24ff70" stroke-width="2"/>
+    <!-- torso and shoulders -->
+    <path d="M371 186 C392 171 417 165 450 165 C483 165 508 171 529 186 L558 244 H342 Z"
+          fill="url(#cloth)" stroke="#16ef62" stroke-width="2.2"/>
+    <path d="M390 184 L450 214 L510 184" fill="none" stroke="#063d20" stroke-width="4" opacity="0.75"/>
 
-    <!-- hood: pointed and open, closer to profile avatar -->
-    <path d="M450 28 C409 39 377 66 360 103 C344 138 350 174 374 198 L396 183 C381 164 376 139 384 115 C394 84 417 64 450 55 C483 64 506 84 516 115 C524 139 519 164 504 183 L526 198 C550 174 556 138 540 103 C523 66 491 39 450 28 Z"
-          fill="url(#hood)" stroke="#2fff78" stroke-width="2.8"/>
-    <!-- hood inner shadow, no extra rings -->
-    <path d="M450 55 C416 64 394 85 384 115 C374 145 384 174 405 192 C420 203 435 209 450 214 C465 209 480 203 495 192 C516 174 526 145 516 115 C506 85 484 64 450 55 Z"
-          fill="#07100c" stroke="#00c94f" stroke-width="2.2"/>
+    <!-- A-shaped hood, based on profile-avatar proportions -->
+    <path d="M450 25 C429 34 410 46 394 62 C376 81 365 104 360 131 L350 190 C366 196 381 199 397 200 L410 165 C397 145 394 121 401 100 C409 76 425 59 450 48 C475 59 491 76 499 100 C506 121 503 145 490 165 L503 200 C519 199 534 196 550 190 L540 131 C535 104 524 81 506 62 C490 46 471 34 450 25 Z"
+          fill="url(#hood)" stroke="#42ff79" stroke-width="2.6"/>
 
-    <!-- mask -->
-    <path d="M450 76 C419 76 399 94 399 121 C399 151 417 173 450 188 C483 173 501 151 501 121 C501 94 481 76 450 76 Z"
-          fill="#020504" stroke="#18ff68" stroke-width="2.3"/>
-    <path d="M450 84 L444 95 L450 100 L456 95 Z" fill="#18ff68" opacity="0.9" filter="url(#glow)"/>
+    <!-- hood opening, starts around forehead instead of tracing the mask -->
+    <path d="M450 51 C426 58 409 74 401 98 C394 120 398 143 411 160 C421 174 434 184 450 192 C466 184 479 174 489 160 C502 143 506 120 499 98 C491 74 474 58 450 51 Z"
+          fill="#07100b"/>
+    <path d="M405 94 C418 70 433 60 450 55 C467 60 482 70 495 94" fill="none" stroke="#0ba947" stroke-width="2" opacity="0.7"/>
+
+    <!-- simple dark mask; no forehead gem and no geometric outline emphasis -->
+    <path d="M450 70 C423 70 406 87 406 113 C406 143 421 164 450 180 C479 164 494 143 494 113 C494 87 477 70 450 70 Z"
+          fill="#020504"/>
 
     <!-- eyes -->
-    <g fill="#25ff73" filter="url(#glow)">
-      <path d="M414 111 C423 103 435 102 444 106 C441 121 433 132 420 135 C415 128 413 119 414 111 Z"/>
-      <path d="M486 111 C477 103 465 102 456 106 C459 121 467 132 480 135 C485 128 487 119 486 111 Z"/>
-      <animate attributeName="opacity" values="1;1;0;1;1;1;0;1" keyTimes="0;0.45;0.465;0.49;0.81;0.825;0.845;1" dur="7.2s" repeatCount="indefinite"/>
+    <g fill="#2cff72" filter="url(#glow)">
+      <path d="M418 106 C427 98 438 98 445 102 C442 116 435 126 422 130 C418 124 416 114 418 106 Z"/>
+      <path d="M482 106 C473 98 462 98 455 102 C458 116 465 126 478 130 C482 124 484 114 482 106 Z"/>
+      <animate attributeName="opacity" values="1;1;0;1;1;1;0;1" keyTimes="0;0.45;0.463;0.486;0.82;0.834;0.852;1" dur="7.4s" repeatCount="indefinite"/>
     </g>
-    <g opacity="0" stroke="#25ff73" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)">
-      <path d="M415 121 Q429 127 442 121"/>
-      <path d="M485 121 Q471 127 458 121"/>
-      <animate attributeName="opacity" values="0;0;1;0;0;0;1;0" keyTimes="0;0.45;0.465;0.49;0.81;0.825;0.845;1" dur="7.2s" repeatCount="indefinite"/>
+    <g opacity="0" stroke="#2cff72" stroke-width="3.4" stroke-linecap="round" filter="url(#glow)">
+      <path d="M419 117 Q431 123 443 117"/>
+      <path d="M481 117 Q469 123 457 117"/>
+      <animate attributeName="opacity" values="0;0;1;0;0;0;1;0" keyTimes="0;0.45;0.463;0.486;0.82;0.834;0.852;1" dur="7.4s" repeatCount="indefinite"/>
     </g>
-    <path d="M443 154 Q450 158 457 154" fill="none" stroke="#08763a" stroke-width="2" stroke-linecap="round"/>
+    <path d="M444 148 Q450 152 456 148" fill="none" stroke="#087238" stroke-width="1.8" stroke-linecap="round"/>
 
-    <!-- arms -->
-    <path d="M395 198 C410 204 421 214 426 229" fill="none" stroke="#0ba849" stroke-width="18" stroke-linecap="round"/>
-    <path d="M505 198 C490 204 479 214 474 229" fill="none" stroke="#0ba849" stroke-width="18" stroke-linecap="round"/>
+    <!-- sleeves and forearms -->
+    <path d="M392 194 C408 199 419 211 426 226" fill="none" stroke="#0aa548" stroke-width="18" stroke-linecap="round"/>
+    <path d="M508 194 C492 199 481 211 474 226" fill="none" stroke="#0aa548" stroke-width="18" stroke-linecap="round"/>
 
     <!-- desk -->
-    <path d="M309 246 H591" stroke="#52605a" stroke-width="3" stroke-linecap="round"/>
-    <path d="M330 251 H570" stroke="#202923" stroke-width="8" stroke-linecap="round"/>
+    <path d="M303 247 H597" stroke="#52605a" stroke-width="3" stroke-linecap="round"/>
+    <path d="M326 253 H574" stroke="#202923" stroke-width="8" stroke-linecap="round"/>
 
     <!-- keyboard -->
-    <path d="M382 224 H518 L536 245 H364 Z" fill="#111713" stroke="#00c94f" stroke-width="2"/>
-    <g stroke="#0b7136" stroke-width="1" opacity="0.85">
-      <path d="M386 231 H514 M381 237 H519"/>
-      <path d="M397 227 L392 242 M414 227 L411 242 M431 227 L429 242 M450 227 V242 M469 227 L471 242 M486 227 L489 242 M503 227 L508 242"/>
+    <path d="M376 222 H524 L541 245 H359 Z" fill="#111713" stroke="#00c94f" stroke-width="2"/>
+    <g stroke="#0b7136" stroke-width="1" opacity="0.9">
+      <path d="M381 229 H519 M376 236 H524"/>
+      <path d="M391 225 L387 242 M408 225 L405 242 M425 225 L423 242 M442 225 L441 242 M459 225 L460 242 M476 225 L478 242 M493 225 L496 242 M510 225 L515 242"/>
     </g>
-    <rect x="437" y="238" width="27" height="3" rx="1.5" fill="#18ff68" opacity="0.55"/>
+    <rect x="436" y="239" width="28" height="3" rx="1.5" fill="#21ed67" opacity="0.55"/>
 
-    <!-- typing hands, deliberately above keyboard -->
-    <g fill="#0dc454" stroke="#2fff78" stroke-width="1.3">
-      <path d="M405 215 C415 210 426 211 433 219 L429 228 C419 225 411 225 402 229 Z">
-        <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0;0 0" keyTimes="0;0.22;0.48;1" dur="0.66s" repeatCount="indefinite"/>
+    <!-- typing hands -->
+    <g fill="#11bd52" stroke="#34ff77" stroke-width="1.2">
+      <path d="M402 213 C412 208 425 210 434 218 L430 227 C419 224 411 224 400 228 Z">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 3;0 0;0 0" keyTimes="0;0.22;0.48;1" dur="0.64s" repeatCount="indefinite"/>
       </path>
-      <path d="M495 215 C485 210 474 211 467 219 L471 228 C481 225 489 225 498 229 Z">
-        <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 3;0 0" keyTimes="0;0.36;0.64;1" dur="0.66s" repeatCount="indefinite"/>
+      <path d="M498 213 C488 208 475 210 466 218 L470 227 C481 224 489 224 500 228 Z">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 3;0 0" keyTimes="0;0.36;0.64;1" dur="0.64s" repeatCount="indefinite"/>
       </path>
     </g>
 
-    <!-- tiny key flashes -->
-    <g fill="#29ff76" opacity="0.75">
-      <rect x="414" y="235" width="5" height="2"><animate attributeName="opacity" values="0;1;0;0" dur="0.66s" repeatCount="indefinite"/></rect>
-      <rect x="482" y="232" width="5" height="2"><animate attributeName="opacity" values="0;0;1;0" dur="0.66s" repeatCount="indefinite"/></rect>
+    <g fill="#36ff7b" opacity="0.8">
+      <rect x="412" y="233" width="5" height="2"><animate attributeName="opacity" values="0;1;0;0" dur="0.64s" repeatCount="indefinite"/></rect>
+      <rect x="483" y="231" width="5" height="2"><animate attributeName="opacity" values="0;0;1;0" dur="0.64s" repeatCount="indefinite"/></rect>
     </g>
   </g>
 </svg>
